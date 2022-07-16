@@ -14,6 +14,7 @@ function ShoppingList({ items }) {
   function handleChange(event){
     settingselectedCategory(event.target.value)
   }
+  console.log(selectedCategory)
   return (
     <div className="ShoppingList">
       <div className="Filter">

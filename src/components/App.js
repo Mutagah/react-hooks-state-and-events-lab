@@ -5,10 +5,9 @@ import itemData from "../data/items";
 function App() {
   const [darkMode, settingDarkMode] = useState(false)
   function handleClick(){
-    settingDarkMode(()=> !darkMode)
+    settingDarkMode((changingMode)=> !changingMode)
     console.log(darkMode)
   }
-  // console.log(myButton)
   // replace 'false' with a state variable that can be toggled between true and false
   // this will be used for the Dark Mode Toggle feature
   const appClass = darkMode ? "App dark" : "App light"
